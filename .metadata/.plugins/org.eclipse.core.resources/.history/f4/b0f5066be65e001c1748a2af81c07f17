@@ -1,0 +1,6 @@
+package polymorphism;
+
+public class Girl extends Person{
+	private int 
+
+}

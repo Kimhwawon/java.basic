@@ -1,0 +1,13 @@
+package polymorphism;
+
+public class Main02 {
+
+	public static void main(String[] args) {
+		Person t1 = new Teacher("나선생", 26,"컴퓨터");
+		Person d1 = new Doctor("나의사", 32,"내과");
+		
+	t1.showPerson();
+	d1.showPerson();
+
+}
+}

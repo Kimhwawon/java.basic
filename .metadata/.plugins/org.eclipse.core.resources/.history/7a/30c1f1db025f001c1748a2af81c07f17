@@ -1,0 +1,12 @@
+package game.polymorphism;
+
+public class Main01P302 {
+
+	public static void main(String[] args) {
+		// main쪽에서 Commoner 와 Orc를 만들어서 교전시켜주세요.
+		Commoner m1 = new Monster("몬스터", 5, 0 ) ;
+ 	    Commoner
+		
+	}
+
+}
