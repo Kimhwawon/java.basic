@@ -9,11 +9,32 @@ public interface Vehicle {
 	// 최대 연료량
 	// 바로 상수로 잡힙니다.
 	int MAX_GAS = 100;
+	// 최저속도(0) - 공용
 	int MIN_SPD = 0;
-	//int 
-			
+	// (CAR)최대속도, 연료증가량, 연료 감소량, 속도증가량, 속도 감속량
+	int CAR_MAX_SPD = 200;
+	int CAR_INCREASE_GAS = 10;
+	int CAR_DECREASE_GAS = 2;
+	int CAR_INCREASE_SPD = 10;
+	int CAR_DECREASE_SPD = 10;
+	
+	
+			// (TRAIN))최대속도, 연료증가량, 연료 감소량, 속도 증가량, 속도 감속량
+	int TRAIN_MAX_SPD = 400;
+	int TRAIN_INCREASE_GAS = 70;
+	int TRAIN_DECREASE_GAS = 7;
+	int TRAIN_INCREASE_SPD = 50;
+	int TRAIN_DECREASE_SPD = 50;
+	
 	// 비행기 전용으로 만드는 상수
-//	int AIRPLAN_GAS = 1000;E_MAX
+	int AIRPLAN_MAX_GAS = 1000;
+	int AIRPLAN_MAX_SPD = 900;
+	int AIRPLAN_INCREASE_GAS = 500;
+	int AIRPLAN_DECREASE_GAS = 150;
+	int AIRPLAN_INCREASE_SPD = 400;
+	int AIRPLAN_DECREASE_SPD = 300;
+	
+	
 	
 	// 탈 것이라면 가지고 있을 공통적 기능을 전부 추상메서드로 작성
 	// {

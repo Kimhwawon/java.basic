@@ -26,23 +26,23 @@ public class Car implements Vehicle {
 		// 단 속도는 200을 초과할 수 없습니다.
 		
 		// 가속 이전에 가속했을 경우 200을 초과하는지 확인해 처리
-		if(speed + 10 > 200) {
-			speed = 200;
+		if(speed + CAR_INCREASE_SPD > CAR_MAX_SPD) {
+			speed =  CAR_MAX_SPD;
 		}else {
-			speed += 10;
+			speed += CAR_INCREASE_SPD;
 	    }
 		// 가속 로직을 전부 확인한 다음
-		gas -= 1;
+		gas -= CAR_DECREASE_GAS;
 	}
 
 	@Override
 	public void breakSpeed() {
 		// 한 번 감속할때마다 속도가 10씩 줄도록 해주세요.
 		// 단, 속도가 0미만인 될 수 없습니다.
-		if (speed - 10 < 0) {
-			speed = 0;
+		if (speed - CAR_DECREASE_SPD < MIN_SPD) {
+			speed =  MIN_SPD;
 	    }else {
-	    	speed -= 10;
+	    	speed -= CAR_DECREASE_SPD;
 	    }
 		}
 
@@ -53,7 +53,7 @@ public class Car implements Vehicle {
 		if(gas + 30 > MAX_GAS) {
 			gas = MAX_GAS;
 		} else {
-			gas += 30;
+			gas += CAR_INCREASE_GAS;
 		}
 		
 	}

@@ -7,4 +7,6 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="game.iinheritance.Warrior"/>
+    <fullyQualifiedTypeName name="casting.Dog"/>
+    <fullyQualifiedTypeName name="static1.StaticTest"/>
 </qualifiedTypeNameHistroy>

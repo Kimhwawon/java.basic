@@ -17,23 +17,23 @@ public class Train implements Vehicle {
 	@Override
 	public void accel() {
 		// 속도제한은 300이며 가속할 경우 50씩 증가합니다.
-		if(speed + 50 > 300 ) {
-			speed = 300;
+		if(speed + TRAIN_INCREASE_SPD > TRAIN_MAX_SPD ) {
+			speed = TRAIN_MAX_SPD;
 			}else {
-				speed += 50;
+				speed += TRAIN_INCREASE_SPD;
 			}
 		// 가속 후 연료 차감
 		//-7씩 차감
-		      gas -= 7;
+		      gas -= TRAIN_DECREASE_GAS;
 	}
 
 	@Override
 	public void breakSpeed() {
 		// 감속도 50씩
-		if (speed - 50 < 0){
-		    speed = 0;
+		if (speed - TRAIN_DECREASE_SPD < MIN_SPD){
+		    speed = MIN_SPD;
 	}else {
-		speed -= 50;
+		speed -= TRAIN_DECREASE_SPD;
 		
 	}}
 	
@@ -42,10 +42,10 @@ public class Train implements Vehicle {
 	@Override
 	public void reFuel() {
 		// 연료량은 70씩 채웁니다.
-		if(gas + 70 > MAX_GAS ) {
+		if(gas + TRAIN_INCREASE_GAS > MAX_GAS ) {
 			gas = MAX_GAS;
 			} else {
-				gas += 70;
+				gas += TRAIN_INCREASE_GAS;
 			}
 	}
 
