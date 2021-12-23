@@ -23,13 +23,9 @@ public class TryCatch01P353 {
 			System.out.println(a/b);
 			System.out.println("계산 끝!");
 		} catch (Exception e) {
-			//catch블록에는 (Exception e)가 기본으로 들어간다. 
-			// Exception e 로 적는경우 예외 종류를 막론하고 전부 처리 가능하다. 
-			// 추후에 특정한 종류의 예외를 따로 처리하고 싶은 경우는 다른 예외명을 적으면 된다.
-			System.out.println("나누는 숫자는 0이 될 수 없습니다.");
+			
 	       } finally {
-	    	   // 모든 실행구문이 다 끝나고 나서 실행할 코드는
-	    	   // finally블럭 내부에 작성합니다. 
+	    	  
 	    	   System.out.println("코드 끝!");
 	    	   
 	       }

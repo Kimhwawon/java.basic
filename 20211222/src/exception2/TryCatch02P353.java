@@ -9,18 +9,17 @@ public class TryCatch02P353 {
 		// 하나를 골라서 예외가 발생할 수 있는 코드를 작성해주세요.
 		// 발생할 얘외에 대한 처리는 try~catch블록을 활용합니다.
 		// /by zero(0으로 나누기)에 대한 처리는 허용하지 않습니다. 
-		Scanner scan = new Scanner(System.in);
-		
-		try {
-			int[] arr =  new int[5];
-			System.out.println(arr[5]);
-		} catch (Exception e) {
-			
-			System.out.println("나누는 숫자는 0이 될 수 없습니다.");
-	       } finally {
-	    
-	    	   
-
+	String[] name = {"김자바","김화원", "신라면"};
+	try {
+		//0,1, 2번인덱스까지 가지는데 3까지 조회하도록 반복문 작성
+		for (int i = 0; i < 4; i++) {
+			System.out.println(name[i]);
+		}
+		System.out.println("이상 모든 학생 목록입니다.");
+	}catch (Exception e){
+		System.out.println("더 이상 학생이 없는데 초과 인덱스를 조회했습니다. ");
+	}finally {
+		System.out.println("집계가 끝났습니다.");
 	}
-
-}}
+	
+	}}
