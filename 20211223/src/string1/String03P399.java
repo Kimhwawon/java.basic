@@ -24,29 +24,26 @@ public class String03P399 {
 		// 마지막으로 발견된 지점
 		int fidx = -1;
 		while(bool) {
+			// fidx가 마지막으로 조회된 지점이므로
+			// fidx + 1부터 단어를 찾기 시작해야함
+			
+			//indexOf를 실행했는데 -1이 나온다면
+			// 더 찾을 필요가 없다는 의미임.
 			int get = sentence.indexOf (searchVoca, fidx + 1);
 			if(get == -1) {
+				// get에 -1부터 저장된다면 조회할 필요가
+				// 없으므로 boo;을 false로 바꿔
+				// while문을 탈출하게 합니다.
 				bool = false;
 			}else {
+				// 마지막 발견지점 갱신
 				fidx = get;
 				count++; //글씨 카운터 증가
-				System.out.println(get + "번에서" + count + "번쨰" + sentence + "이(가) 검출되었습니다.");
+				System.out.println(get + "번인덱스에서" + count + "번쨰" + searchVoca + "이(가) 검출되었습니다.");
 			}
 		}
 		
-		
-	
-		
-		
-		
-		//String hwawon = "hwawon";
-		//int get = hwawon.indexOf("won");
-		//System.out.println(get);
-		
-		//get = hwawon.indexOf("won",1);
-		//System.out.println(get);
-		
-		
+
 
 	}
 
