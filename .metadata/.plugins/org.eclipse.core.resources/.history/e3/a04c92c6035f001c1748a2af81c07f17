@@ -1,7 +1,0 @@
-
-public class GreenSlime extends Monster{
-	public GreenSlime() {
-		super(슬라임)
-	}
-
-}
