@@ -1,33 +1,35 @@
 package game.polymorphism;
 
-// 모든 사냥감의 뼈대가 되는 클래스
+//모든 사냥감의 뼈대가 되는 클래스
 public class Monster {
 	
-	// name(몬스터종류), hp, mp, atk
+	// name(몬스터종류), hp, atk
 	private String name;
 	private int hp;
 	private int atk;
 	
-	// 생성자까지 만들어주세요.
+	
+	
+	//생성자까지 만들어주세요.
 	public Monster(String name, int hp, int atk) {
 		this.name = name;
 		this.hp = hp;
 		this.atk = atk;
 	}
-	//doBattle(int)를 생성해주세요.
-	// 사용자의 공격력만큼 몬스터으 체력이 깎입니다.
-	// 0이되면 교전이 불가능하다는 메세지를 남겨줍니다.
-	// 체력이 0보다 높은 경우에는 남은체력을 마지막에 콘솔창에 띄어줍니다.
 	
+	// doBattle(int)를 생성해주세요.
+	// 사용자의 공격력 만큼 몬스터의 체력이 깎입니다.
+	// 0이되면 교전이 불가능하다는 메세지를 남겨줍니다.
+	// 체력이 0보다 높은 경우에는 남은체력을 마지막에 콘솔창에 띄워줍니다.
 	public void doBattle(int atk) {
-		this.hp = this.hp - atk; // atk는 사용자의 공격력, this.hp는 몬스터 체력
-		if (this.hp <=0 ) {
-			System.out.println( this.name + "이/가 교전 불가능 상태입니다");	
+		this.hp = this.hp - atk;//atk은 사용자의 공격력, this.hp는 몬스터체력
+		if(this.hp <= 0) {
+			System.out.println(this.name + "이/가 교전 불가능 상태입니다.");
 			return;
 		}
 		System.out.println(this.name + "이/가 공격받았습니다. 잔여체력 : " + this.hp);
 	}
-	// getter / setter를 만드어주세요.
+	//getter/setter를 만들어주세요.
 	public String getName() {
 		return name;
 	}
@@ -52,6 +54,7 @@ public class Monster {
 		this.atk = atk;
 	}
 	
-    
-
+	
+	
+	
 }

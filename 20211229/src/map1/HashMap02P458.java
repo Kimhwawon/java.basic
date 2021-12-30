@@ -10,28 +10,16 @@ public class HashMap02P458 {
 		// key는 음식이름, value는 가격(정수)로 저장해주세요.
 		// 메뉴는 5개 이상 집어넣어주세요.
 		// 메뉴를 3개 조회해서 화면에 출력해주세요.
-		
 		Map<String, Integer> map = new HashMap<>();
 		
-		map.put("자장면", 5000);
-		map.put("짬뽕", 6000);
-		map.put("탕수육", 8000);
-		map.put("유린기", 12000);
-		map.put("깐풍기", 15000);
+		map.put("최강금돈까스", 15000);
+		map.put("라무라", 14000);
+		map.put("로쏘", 9900);
+		map.put("오레노라멘", 7900);
+		map.put("스프카레진", 12000);
 		
-
-		
-		
-		System.out.println("자장면 가격 : " + map.get("자장면"));
-		System.out.println("짬뽕 가격 : " + map.get("짬뽕"));
-		System.out.println("탕수육 가격 : " + map.get("탕수육"));
-		
-		System.out.println(map);
-		
-		
-		
-		
-
+		System.out.println("스프카레 진 가격 : " + map.get("스프카레진"));
+		System.out.println("최강금돈까스 가격 : " + map.get("최강금돈까스"));
+		System.out.println("오레노라멘 가격 : " + map.get("오레노라멘"));
 	}
-
 }

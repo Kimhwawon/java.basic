@@ -13,14 +13,14 @@ public class Lotto02 {
 		// equals는 내부 요소의 순서까지 같이 비교합니다.
 		List<Integer> l1 = new ArrayList<>();
 		List<Integer> l2 = new ArrayList<>();
-		
-		System.out.println("주소값 비교 : " + (l1 == l2 ));
+				
+		System.out.println("주소값 비교 : " + (l1 == l2));
 		// 둘 다 빈 리스트이므로 내부에 든 자료끼리만 비교했을때는 true임
 		System.out.println("" + l1 + l2);
 		System.out.println("내부에 든 자료 비교 : " + l1.equals(l2));
 		
-		// l1과 l2에 각각 요소를 입력하되, 순서에 따른 결과 확인하기
-		// l1, l2에 여러분들이 같은 자료를 넣어주시되, (중복된 번호를 같은 리스트에 넣지 말기 => 1, 1X)
+		// l1과 l2에 각각 요소를 입력하되, 순서에 따른 결과 확인하기.
+		// l1, l2에 여러분들이 같은 자료를 넣어주시되, (중복된 번호를 같은 리스트에 넣지 말기 => 1, 1 X)
 		// 순번을 같게 넣어서 비교해보세요.
 		l1.add(1);
 		l1.add(2);
@@ -28,9 +28,5 @@ public class Lotto02 {
 		l2.add(1);
 		
 		System.out.println(l1.equals(l2));
-		
-		
-
 	}
-
 }
