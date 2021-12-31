@@ -9,8 +9,8 @@ public class HelloJava {
  public static void main(String[] args) {
 	 // "적힌내용" 을 콘솔이라고 불리는 창에 찍어줍니다.
 	System.out.println("Hello World");
-  }
+  }  
 
-}
+} 
 
 
